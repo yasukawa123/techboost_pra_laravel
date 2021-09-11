@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 class NewsController extends Controller
 {
     // Laravel 08
-    public function add()
+    public function add()   // addは　Action   
     {
         return view('admin.news.create');   // NewsController -> Viewのadmin.news.createに返す
     }
