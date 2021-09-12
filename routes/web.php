@@ -23,5 +23,4 @@ Route::group(['prefix' => 'admin'], function() {
 });
 
 // Laravel 09 課題
-Route::get('', 'XXX\AAAController@bbb');
-
+Route::get('XXX', 'XXX\AAAController@bbb');
