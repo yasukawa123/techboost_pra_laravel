@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Laravel 09
+// prefix = URIのPrefix（接頭辞）をグループ化して設定できるメソッド
+// URI = 名前または場所を識別する書き方のルールの総称（親玉）。URLやURNはURIで定められたルールに従って書かれたり使われたりする。
+Route::group(['prefix' => 'admin'], function() {
+    Route::get('news/create', 'Admin\NewsController@add');
+});
+
+// Laravel 09 課題
+Route::get('', 'XXX\AAAController@bbb');
+
